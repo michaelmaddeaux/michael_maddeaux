@@ -1,0 +1,29 @@
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  height: 88px;
+}
+
+.Nav__Logo {
+  color: white;
+}
+
+.Nav__Logo h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.Nav__Logo h2 {
+  letter-spacing: 1px;
+}
+
+.Nav__Links a {
+  padding: 0 10px 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.Nav__Links a:hover {
+  color: rgb(126, 126, 0);
+}
