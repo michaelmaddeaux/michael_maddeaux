@@ -17,7 +17,7 @@ function Doc() {
 const container = {
   color: `white`,
   display: `grid`,
-  width: `60vw`,
+  width: `70vw`,
 }
 
 export const getContent = graphql`

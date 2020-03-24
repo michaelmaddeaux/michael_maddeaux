@@ -1,7 +1,6 @@
 import React from "react"
-import { Container, Col, Row } from "reactstrap"
+import { Container, Col } from "reactstrap"
 import styles from "./Nav.module.css"
-
 import { Link } from "react-router-dom"
 
 const Nav = () => (
@@ -16,7 +15,6 @@ const Nav = () => (
       <Link to="/narrative"> Narrative</Link>
       <Link to="/music_videos">Music Video</Link>
       <Link to="/doc">Doc </Link>
-      <Link to="/credits"> Credits </Link>
     </Col>
   </Container>
 )
