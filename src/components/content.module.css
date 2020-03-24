@@ -1,0 +1,42 @@
+.Content {
+  color: white;
+  display: grid;
+  width: 60vw;
+}
+
+.Content__Gallery{
+  max-width: 1000px;;
+}
+
+.Content__Card {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.Content__Screenshot {
+  position: relative;
+}
+
+.Content__Info {
+  font-family: "Roboto";
+  font-size: 16px;
+  position: absolute;
+  bottom: 50px;
+  padding-left: 15px;
+  max-width: 1000px;
+
+}
+
+.Content__Title {
+  font-size: 20px;
+  font-weight: 1000;
+  margin: 0;
+  
+}
+
+.Content__Description {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+  padding: 5px 0px 15px 0;
+}

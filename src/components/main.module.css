@@ -1,0 +1,109 @@
+.Vimeo {
+  height: 40vh;
+  margin-bottom: 20px;
+}
+
+.Social_Media {
+  display: flex;
+  flex-direction: row;
+}
+
+.About {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .About {
+    grid-template-columns: 1fr;
+  }
+}
+
+.About__Bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  height: 40vh;
+  /* background-color: lightblue; */
+}
+
+.About__Bio p {
+  font-size: 16px;
+  margin-left: 50px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 1000px) {
+  .About__Bio p {
+    font-size: 16px;
+  }
+}
+
+.About__Image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 820px) {
+  .About__Image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.About__Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.About__Logo_Award {
+  width: 40%;
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+.Contact_Info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Contact_Info__Phone {
+  display: flex;
+  flex-direction: row;
+}
+
+.Contact_Info__Phone p {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 5px 0 5px;
+}
+
+.Contact_Info__Social_Media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Contact_Info__Social_Media a {
+  font-size: 14px;
+  padding: 0 5px 0 5px;
+  text-decoration-color: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Contact_Info__Social_Media a:hover {
+  color: rgb(126, 126, 0);
+}

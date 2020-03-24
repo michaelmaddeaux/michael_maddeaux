@@ -14,13 +14,20 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@reach/router": "^1.3.3",
+    "@types/react-router-dom": "^5.1.3",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.3.0",
     "gatsby-plugin-sharp": "^2.5.1",
+    "gatsby-plugin-transition-link": "^1.18.0",
+    "gatsby-source-contentful": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.1",
+    "gsap": "^3.2.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-player": "^1.15.2",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "reactstrap": "^8.4.1"
   },
   "devDependencies": {

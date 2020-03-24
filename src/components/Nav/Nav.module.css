@@ -6,6 +6,11 @@
   height: 88px;
 }
 
+.Nav a{
+  color: white;
+  text-decoration: none;
+}
+
 .Nav__Logo {
   color: white;
 }
@@ -19,9 +24,11 @@
 }
 
 .Nav__Links a {
-  padding: 0 10px 0 10px;
+  font-size: 14px;
+  padding: 0 20px 0 20px;
   color: white;
   text-decoration: none;
+  text-transform: uppercase
 }
 
 .Nav__Links a:hover {

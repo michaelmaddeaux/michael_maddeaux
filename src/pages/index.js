@@ -1,30 +1,35 @@
 import React from "react"
+import { Switch, Route, HashRouter } from "react-router-dom"
+import Main from "../components/main"
 import styles from "./index.module.css"
+import { Container, Row, Col } from "reactstrap"
 import Header from "../components/Header"
 import Nav from "../components/Nav/Nav"
-import { Container, Row, Col } from "reactstrap"
-import ReactPlayer from "react-player"
+import Music_Videos from "../components/music_videos"
+import Narrative from "../components/narrative"
+import Doc from "../components/doc"
 
-class Index extends React.Component {
-  render() {
-    return (
+const Index = () => {
+  return (
+    <HashRouter>
       <Container className={styles.Layout}>
         <Row fluid="lg" className={styles.Container}>
           <Header />
           <Col className={styles.Container__Nav}>
             <Nav />
           </Col>
-          <Col className={styles.Container__Player}>
-            <ReactPlayer
-              width="100%"
-              height="100%"
-              url="https://vimeo.com/360423669"
-            />
+          <Col>
+            <Switch>
+              <Route path="/" exact component={Main} />
+              <Route path="/narrative" exact component={Narrative} />
+              <Route path="/music_videos" exact component={Music_Videos} />
+              <Route path="/doc" exact component={Doc} />
+            </Switch>
           </Col>
         </Row>
       </Container>
-    )
-  }
+    </HashRouter>
+  )
 }
 
 export default Index
