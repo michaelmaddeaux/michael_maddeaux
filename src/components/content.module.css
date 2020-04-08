@@ -5,7 +5,9 @@
 }
 
 .Content__Gallery{
-  max-width: 1000px;;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .Content__Card {

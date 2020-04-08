@@ -18,11 +18,12 @@ const container = {
   color: `white`,
   display: `grid`,
   width: `70vw`,
+  maxWidth: `1280px`
 }
 
 export const getContent = graphql`
   query {
-    allContentfulDoc{
+    allContentfulDoc(sort: {order: ASC, fields: updatedAt}){
       edges {
         node {
           description

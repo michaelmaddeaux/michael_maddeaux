@@ -18,18 +18,19 @@ const container = {
   color: `white`,
   display: `grid`,
   width: `70vw`,
+  maxWidth: `1280px`
 }
 
 export const getContent = graphql`
   query {
-    allContentfulNarrative {
+    allContentfulNarrative(sort: {order: DESC, fields: updatedAt}) {
       edges {
         node {
           description
           title
           screenshot {
             id
-            fluid(maxWidth: 1000, quality: 100) {
+            fluid(maxWidth: 5000, quality: 100) {
               ...GatsbyContentfulFluid
             }
           }
